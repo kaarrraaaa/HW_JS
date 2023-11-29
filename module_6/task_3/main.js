@@ -1,13 +1,8 @@
 // Функция для фильтрации массива объектов
 function filter(objects, property, value) {
-let filterObjects = [];
-for (let i = 0; i< objects.length; i++){
-    if (objects[i][property] === value ){
-        filterObjects.push(objects[i]);
-    }
+ return objects.filter(object => object[property] === value);
 }
-}
-return filterObjects;
+
 // Создание массива объектов
 let objects = [
  { name: 'Василий', surname: 'Васильев' },
