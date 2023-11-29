@@ -1,10 +1,6 @@
 // Функция для определения старшего пользователя
 function getOlderUser(user1, user2) {
- if (user1.age > user2.age) {
-  return user1.name;
- } else {
-  return user2.name;
- }
+ return user1.age > user2.age ? user1.name : user2.name;
 }
 
 // Создание объектов пользователей
