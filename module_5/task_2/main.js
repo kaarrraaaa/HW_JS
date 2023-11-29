@@ -1,12 +1,6 @@
 // Функция для фильтрации email-адресов
 function filter(whiteList, blackList) {
- let result = [];
-  for (let i=0; i< whiteList.lenght; i++){
-    if(!blackList.includes(whiteList[i])){
-        result.push(whiteList[i]);
-    }
-  }
-   return result;
+ return whiteList.filter(email => !blackList.includes(email));
 }
 
 // Массив с почтовыми адресами:
@@ -19,4 +13,4 @@ let blackList = ['jsfunc@mail.ru','goodday@day.ru'];
 let result = filter(whiteList, blackList);
 
 // Вывод результата
-console.log(result); 
+console.log(result);
