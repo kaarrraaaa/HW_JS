@@ -1,15 +1,12 @@
 function arrSort(arr) {
- for (let j = arr.length - 1; j > 0; j--) {
-   for (let i = 0; i < j; i++) {
-     if (arr[i] > arr[i + 1]) {
-       let temp = arr[i];
-       arr[i] = arr[i + 1];
-       arr[i + 1] = temp;
-     }
-   }
- }
- console.log(arr);
- return arr;
+ return arr.sort((a, b) => {
+  if (a > b) return 1;
+  if (a < b) return -1;
+  return 0;
+ });
 }
+
+console.log(arrSort([5, 3, 2, 1, 4])); // Output: [1, 2, 3, 4, 5]
+
 
 
