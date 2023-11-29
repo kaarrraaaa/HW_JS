@@ -3,8 +3,8 @@ let userName = "john";
 let userSurname = "DOE";
 
 // Преобразование строк в верхний регистр
-let subStringNameFirst = userName.substring(0,1).toUpperCase();
-let subStringSurnameFirst= userSurname.charAt(0).toUpperCase();
+let subStringNameFirst = userName[0].toUpperCase();
+let subStringSurnameFirst = userSurname[0].toUpperCase();
 let subStringName = userName.substring(1).toLowerCase();
 let subStringSurname = userSurname.substring(1).toLowerCase();
 
